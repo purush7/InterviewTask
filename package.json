@@ -1,0 +1,33 @@
+{
+  "name": "make_api",
+  "version": "1.0.0",
+  "description": "The aim of this project is to build get and post apis in nodejs using express for importing the csv files from user,store it in database and fetching the data to user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brucewayne8/make_api.git"
+  },
+  "keywords": [
+    "API",
+    "MySQL",
+    "Nodejs"
+  ],
+  "author": "brucewayne8",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.1",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "node-cron": "^2.0.3",
+    "promise": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
