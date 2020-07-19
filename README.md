@@ -65,6 +65,8 @@ _The key of the file uploaded in Post API call is **csv**._
 * Node  verson 10.19.0
 * npm version 6.14.4`
 
+Constraints : The csv files in the data directory shouldn't contain the '-' in file names. It needed to be converted into underscore('_') .
+
 ## Execute:
     
     You can execute the program by the command `node run.js` .
