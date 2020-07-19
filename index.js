@@ -114,18 +114,24 @@ app.get('/get', function (req, res) {
 
 app.post('/uploads/', upload.single('csv'), (req, res) =>{
 
-    var file_ext = path.extname(req.file.filename);
-      if (file_ext !== ".csv") {
-        return res.status(403).json({ error: validationError });
-      }
-      else {
-        ToDataBase(__basedir + '/tmp/' + req.file.filename);
-        res.status(200);
+    if(req.file === undefined){
+        res.status(4);
         res.json({
-              'msg': 'File uploaded/import successfully!', 'file': req.file
-            });
-      }
-
+        'msg': 'Upload a file'});
+    }
+    else {
+        var file_ext = path.extname(req.file.filename);
+        if (file_ext !== ".csv") {
+            return res.status(415).json({ error: validationError });
+        }
+        else {
+            ToDataBase(__basedir + '/tmp/' + req.file.filename);
+            res.status(200);
+            res.json({
+                'msg': 'File uploaded/import successfully!', 'file': req.file
+                });
+        }
+    }
       return res
     });
 
