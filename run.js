@@ -5,7 +5,6 @@ const path =require('path');
 const date_ob = new Date();
 var Promise = require('promise');
 const cron  = require('node-cron');
-const { createConnection } = require('net');
 global.__basedir = __dirname;
 
 
