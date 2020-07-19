@@ -12,10 +12,10 @@ This project consists of two tasks.
 
 ### Prerequisites:
 
-* Node
-* MySQL
-* Postman
-
+* npm       6.1.0
+* Node      10.3,0
+* MySQL     8.0.21
+* Postman  7.28.0
 * modules of Node:
     "express": "^4.17.1",
     "fast-csv": "^4.3.1",
@@ -26,8 +26,6 @@ This project consists of two tasks.
     "promise": "^8.1.0" ,
     "nodemon": "^2.0.4"
 
-* Node  verson 10.19.0
-* npm version 6.14.4`
 
 
 
@@ -52,9 +50,9 @@ _The key of the file uploaded in Post API call is **csv**._
 
 ### Prerequisites:
 
-* Node
-* MySQL
-
+* npm       6.1.0
+* Node      10.3,0
+* MySQL     8.0.21
 * modules of Node:
     "fast-csv": "^4.3.1",
     "fs": "0.0.1-security",
@@ -62,8 +60,6 @@ _The key of the file uploaded in Post API call is **csv**._
     "node-cron": "^2.0.3",
     "promise": "^8.1.0" ,
 
-* Node  verson 10.19.0
-* npm version 6.14.4`
 
 Constraints : The csv files in the data directory shouldn't contain the '-' in file names. It needed to be converted into underscore('_') .
 
