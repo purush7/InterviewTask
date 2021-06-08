@@ -1,5 +1,5 @@
 {
-  "name": "built_api",
+  "name": "InterviewTask",
   "version": "1.0.0",
   "description": "The aim of this project is to build get and post apis in nodejs using express for importing the csv files from user,store it in database and fetching the data to user.",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brucewayne8/Built_API.git"
+    "url": "https://github.com/purush7/InterviewTask.git"
   },
   "keywords": [
     "API",
     "MySQL",
     "Nodejs"
   ],
-  "author": "brucewayne8",
+  "author": "purush7",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
